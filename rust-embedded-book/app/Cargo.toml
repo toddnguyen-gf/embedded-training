@@ -13,6 +13,7 @@ panic-halt = "0.2.0"
 
 # Uncomment for the panic example.
 # panic-itm = "0.4.1"
+panic-semihosting = "0.5.6"
 
 # Uncomment for the allocator example.
 # alloc-cortex-m = "0.4.0"
