@@ -16,11 +16,14 @@
 
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h" // access using geometry_msgs::Twist
-#include "turtlesim/Pose.h" // access using turtlesim::Pose
+#include "turtlesim/Pose.h"      // access using turtlesim::Pose
 
 // any state variables or callback/computation functions go here
+void draw_straight_line(ros::Publisher vel_pub);
+void draw_eight_figure(ros::Publisher vel_pub);
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
   ros::init(argc, argv, "turtle_publisher_18642");
   ros::NodeHandle nh;
 
@@ -32,11 +35,19 @@ int main(int argc, char **argv) {
    * The following is code to command the turtle in a straight line, in 5 steps.
    * You should replace it with your own code to draw a figure 8.
    */
-  ros::Rate r(.5); // .5Hz (run every 2 seconds)
+  // draw_straight_line(vel_pub);
+  draw_eight_figure(vel_pub);
 
+  return 0;
+}
+
+void draw_straight_line(ros::Publisher vel_pub)
+{
+  ros::Rate r(.5); // .5Hz (run every 2 seconds)
   int num_steps = 5;
 
-  while (num_steps > 0) {
+  while (num_steps > 0)
+  {
     geometry_msgs::Twist vel_msg;
     vel_msg.linear.x = 1.0;
     vel_pub.publish(vel_msg);
@@ -44,5 +55,32 @@ int main(int argc, char **argv) {
     ros::spinOnce();
     r.sleep();
   }
-  return 0;
+}
+
+void draw_eight_figure(ros::Publisher vel_pub)
+{
+  ros::Rate r(.5); // .5Hz (run every 2 seconds)
+  int num_step = 8;
+
+  // Figure 8 top
+  for (int i = 0; i < num_step; i++)
+  {
+    geometry_msgs::Twist vel_msg;
+    vel_msg.linear.x = 1.0;
+    vel_msg.angular.z = 1.0;
+    vel_pub.publish(vel_msg);
+    ros::spinOnce();
+    r.sleep();
+  }
+
+  // Negate angular velocity
+  for (int i = 0; i < num_step; i++)
+  {
+    geometry_msgs::Twist vel_msg;
+    vel_msg.linear.x = 1.0;
+    vel_msg.angular.z = -1.0;
+    vel_pub.publish(vel_msg);
+    ros::spinOnce();
+    r.sleep();
+  }
 }
