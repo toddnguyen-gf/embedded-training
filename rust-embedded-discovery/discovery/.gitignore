@@ -1,3 +1,5 @@
+**/settings.json
+
 *.org
 .#*
 .gdb_history
