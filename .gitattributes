@@ -9,3 +9,6 @@
 *.jpg binary
 *.jpeg binary
 *.png binary
+*.pptx binary
+*.ppt binary
+*.pdf binary
