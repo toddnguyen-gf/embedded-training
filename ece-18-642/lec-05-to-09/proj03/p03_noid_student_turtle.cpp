@@ -243,19 +243,26 @@ void _setTurtlePosition(QPointF &pos_, Orientation orientation) {
   _upper_left_coords.y = pos_.y();
   _lower_right_coords.x = pos_.x();
   _lower_right_coords.y = pos_.y();
-  if (orientation < Orientation::kEast) {
-    if (orientation == Orientation::kWest) {
+
+  switch (orientation) {
+    case Orientation::kWest:
       _lower_right_coords.y += 1;
-    } else {
+      break;
+    case Orientation::kNorth:
       _lower_right_coords.x += 1;
-    }
-  } else {
-    _lower_right_coords.x += 1;
-    _lower_right_coords.y += 1;
-    if (orientation == Orientation::kEast) {
+      break;
+    case Orientation::kEast:
+      _lower_right_coords.x += 1;
+      _lower_right_coords.y += 1;
       _upper_left_coords.x += 1;
-    } else {
+      break;
+    case Orientation::kSouth:
+      _lower_right_coords.x += 1;
+      _lower_right_coords.y += 1;
       _upper_left_coords.y += 1;
-    }
+      break;
+    default:
+      ROS_ERROR("%s", "Should never reach this default case");
+      break;
   }
 }
