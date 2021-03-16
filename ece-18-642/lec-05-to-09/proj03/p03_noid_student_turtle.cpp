@@ -66,7 +66,7 @@ bool moveRightHandRule(QPointF &pos_, int &nw_or);
  * Set the orientation and the current state base on the turtle's CURRENT
  * orientation.
  */
-Orientation _set_orientation_and_current_state(
+Orientation _setOrientationAndCurrentState(
     Orientation orientation, Orientation orientationGoThisOrientation,
     Orientation orientationMazeContainsWall);
 
@@ -110,19 +110,19 @@ bool moveRightHandRule(QPointF &pos_, int &nw_or) {
 
     switch (orientation) {
       case Orientation::kWest:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kNorth, Orientation::kSouth);
         break;
       case Orientation::kNorth:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kEast, Orientation::kWest);
         break;
       case Orientation::kEast:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kSouth, Orientation::kNorth);
         break;
       case Orientation::kSouth:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kWest, Orientation::kEast);
         break;
       default:
@@ -153,19 +153,19 @@ bool moveLeftHandRule(QPointF &pos_, int &nw_or) {
 
     switch (orientation) {
       case Orientation::kWest:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kSouth, Orientation::kNorth);
         break;
       case Orientation::kNorth:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kWest, Orientation::kEast);
         break;
       case Orientation::kEast:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kNorth, Orientation::kSouth);
         break;
       case Orientation::kSouth:
-        orientation = _set_orientation_and_current_state(
+        orientation = _setOrientationAndCurrentState(
             orientation, Orientation::kEast, Orientation::kWest);
         break;
       default:
@@ -183,7 +183,7 @@ bool moveLeftHandRule(QPointF &pos_, int &nw_or) {
   return _returnTimeout();
 }
 
-Orientation _set_orientation_and_current_state(
+Orientation _setOrientationAndCurrentState(
     Orientation orientation, Orientation orientationGoThisOrientation,
     Orientation orientationMazeContainsWall) {
   if (_current_state == State::kGoThisOrientation) {
