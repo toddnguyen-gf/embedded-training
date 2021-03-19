@@ -95,11 +95,19 @@ uint8_t *getTurtleMap() {
   return _fs_turtle_map;
 }
 
+static bool _checkBounds(uint32_t row, uint32_t col);
+
 uint8_t getTurtleMapValue(uint32_t row, uint32_t col) {
+  if (!_checkBounds(row, col)) {
+    return -1;
+  }
   return _fs_turtle_map[row * _SQUARE_SIZE + col];
 }
 
 void setTurtleMapValue(uint32_t row, uint32_t col, uint8_t value) {
+  if (!_checkBounds(row, col)) {
+    return;
+  }
   _fs_turtle_map[row * _SQUARE_SIZE + col] = value;
 }
 
@@ -130,9 +138,9 @@ static void _setInitialTurtlePosition(QPointF &pos_, Orientation orientation);
 
 static void _displayNumberOfVisits(bool did_turtle_move);
 
-// --------------------------------------------------------
-// | FUNCTION IMPLEMENTATION
-// --------------------------------------------------------
+// o-------------------------------------------------------
+// | FUNCTION IMPLEMENTATIONS
+// o-------------------------------------------------------
 
 bool studentMoveTurtle(QPointF &pos_, int &nw_or) {
   bool did_turtle_move = false;
@@ -237,6 +245,10 @@ bool moveLeftHandRule(QPointF &pos_, int &nw_or) {
   return _returnTimeout();
 }
 
+// o-------------------------------------------------------
+// | PRIVATE FUNCTION IMPLEMENTATIONS
+// o-------------------------------------------------------
+
 static Orientation _setOrientationAndCurrentState(
   Orientation orientation, Orientation orientationGoThisOrientation,
   Orientation orientationMazeContainsWall) {
@@ -333,4 +345,14 @@ static void _displayNumberOfVisits(bool did_turtle_move) {
     int visit = getTurtleMapValue(_fs_current_row, _fs_current_col);
     displayVisits(visit);
   }
+}
+
+static bool _checkBounds(uint32_t row, uint32_t col) {
+  if (row < 0 || row >= _SQUARE_SIZE) {
+    return false;
+  } else if (col < 0 || col >= _SQUARE_SIZE) {
+    return false;
+  }
+
+  return true;
 }
