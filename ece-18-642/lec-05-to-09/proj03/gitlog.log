@@ -1,0 +1,75 @@
+commit 6566f0f438928d82bdc58c8ed5b28942c692138b
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 14:22:46 2021
+
+    Rename _moveTurtle to _moveTurtleHelper to...
+    
+    differentiate it from moveTurtle(), the interface function
+
+commit 43195536dd3a6575539568a750dbd87ddba7d438
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 14:21:17 2021
+
+    Add some helping comments regarding TIMEOUT_MAX
+
+commit c1b14cad9b0b7ab272ed1e0d53b573186bd88e4f
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 14:07:52 2021
+
+    Use `Google` style instead of `Visual Studio`
+
+commit f10f5536ca36fc341184b1472d08b61eddb80086
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 14:03:25 2021
+
+    All conditionally executed sets of statements are enclosed by “{}”
+
+commit 43086362f8322f98c2e885d086cdd24419ac41eb
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:59:59 2021
+
+    Every switch statement has a default clause that activates ROS_ERROR
+
+commit 97d349c60f18a788d9ed0959e447cc7722e4bc29
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:57:07 2021
+
+    Add default statements to switch cases
+
+commit 3221b1a5e37fbd4bea61f776ef75b8616dbf824a
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:51:34 2021
+
+    Remove all #define statements
+
+commit 4bb3bf4486548d70de5953a64f040e185ee90103
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:48:15 2021
+
+    Geometric pairs (e.g. (X,Y)) are coupled using typedefs
+
+commit 88a863033455d8f4037c3c6901ace3e31dcb358d
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:33:58 2021
+
+    Use `typedef` for enums
+    
+    - In C++, I would use `enum class` instead, but we are writing in C I believe.
+
+commit 0c0dbb2124145c2856670bd0aff380af18bc04a8
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:30:28 2021
+
+    Use a `typedef` for the `Timeout` type
+
+commit 5e37109d5b17798f1c2fcdf81444b998941d8b92
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:27:54 2021
+
+    Use uint16_t and uint8_t instead of float
+
+commit 5147599dc965436f0ad34bbe6162c04341c2cdf0
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 15 13:17:32 2021
+
+    Add comments for clarification
