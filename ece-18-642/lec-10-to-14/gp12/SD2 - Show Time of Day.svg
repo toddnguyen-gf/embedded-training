@@ -1,1 +1,101 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="676" height="314"><defs/><g><g/><g/><g/><g><rect fill="white" stroke="none" x="0" y="0" width="676" height="314"/></g><g><text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="201.6598688190703" y="24.50280495" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD2 - Show Time of Day</text></g><g/><g><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 42.89129723050001 95.887643371 L 42.89129723050001 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 129.17389169150002 95.887643371 L 129.17389169150002 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 350.5090949915 95.887643371 L 350.5090949915 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 465.2916894525 95.887643371 L 465.2916894525 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 606.5742839135 95.887643371 L 606.5742839135 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/></g><g><path fill="none" stroke="none"/><g><path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.167601650000002 51.782594461 L 77.61499281100001 51.782594461 L 77.61499281100001 95.887643371 L 8.167601650000002 95.887643371 L 8.167601650000002 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/></g><g><g/><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="25.891297230500008" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">User</text></g><path fill="none" stroke="none"/><g><path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 93.95019611100001 51.782594461 L 164.397587272 51.782594461 L 164.397587272 95.887643371 L 93.95019611100001 95.887643371 L 93.95019611100001 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/></g><g><g/><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="111.67389169150002" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SW1</text></g><path fill="none" stroke="none"/><g><path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 315.28539941099996 51.782594461 L 385.732790572 51.782594461 L 385.732790572 95.887643371 L 315.28539941099996 95.887643371 L 315.28539941099996 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/></g><g><g/><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="333.0090949915" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SW2</text></g><path fill="none" stroke="none"/><g><path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 402.067993872 51.782594461 L 528.515385033 51.782594461 L 528.515385033 95.887643371 L 402.067993872 95.887643371 L 402.067993872 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/></g><g><g/><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="419.7916894525" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">TimeControl</text></g><path fill="none" stroke="none"/><g><path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 544.850588333 51.782594461 L 668.2979794940001 51.782594461 L 668.2979794940001 95.887643371 L 544.850588333 95.887643371 L 544.850588333 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/></g><g><g/><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="562.5742839135" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">TimeDisplay</text></g></g><g><path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 114.47220872150001 128.558049971 L 350.5090949915 128.558049971 L 365.21077796149996 143.259732941 L 365.21077796149996 166.12901756099998 L 114.47220872150001 166.12901756099998 L 114.47220872150001 128.558049971 M 350.5090949915 128.558049971 L 350.5090949915 143.259732941 L 365.21077796149996 143.259732941" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/><g><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="137.34149334149998" y="151.42733459099995" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Not Held Down nor Pressed</text></g><g><g><rect fill="white" stroke="none" x="491.98270618800007" y="190.631822511" width="87.90056099" height="21.23576429"/></g><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="494.4329866830001" y="205.33350548099997" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Show Time</text></g><g><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 465.2916894525 211.867586801 L 593.1249665298334 211.867586801" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/><g transform="translate(606.5742839135,211.867586801) translate(-606.5742839135,-211.867586801)"><path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 592.9616144968334 205.06125209266665 L 606.5742839135 211.867586801 L 592.9616144968334 218.67392150933333 Z"/></g></g><g><g><rect fill="white" stroke="none" x="271.78251007700004" y="236.37039175099997" width="105.90056099" height="21.23576429"/></g><text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="274.23279057200006" y="251.07207472099995" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Displays Time</text></g><g><path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 606.5742839135 257.60615604099996 L 56.340614614166675 257.60615604099996" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/><g transform="translate(42.89129723050001,257.60615604099996) translate(-42.89129723050001,-257.60615604099996)"><path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 56.50396664716668 250.79982133266662 L 42.89129723050001 257.60615604099996 L 56.50396664716668 264.4124907493333 Z"/></g></g></g><g/><g/><g/><g/><g/></g></svg>
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="676" height="314">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="676" height="314"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="201.6598688190703" y="24.50280495" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD2 - Show Time of Day</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 42.89129723050001 95.887643371 L 42.89129723050001 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 129.17389169150002 95.887643371 L 129.17389169150002 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 350.5090949915 95.887643371 L 350.5090949915 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 465.2916894525 95.887643371 L 465.2916894525 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 606.5742839135 95.887643371 L 606.5742839135 314.779367591" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.167601650000002 51.782594461 L 77.61499281100001 51.782594461 L 77.61499281100001 95.887643371 L 8.167601650000002 95.887643371 L 8.167601650000002 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="25.891297230500008" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">User</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 93.95019611100001 51.782594461 L 164.397587272 51.782594461 L 164.397587272 95.887643371 L 93.95019611100001 95.887643371 L 93.95019611100001 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="111.67389169150002" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SW1</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 315.28539941099996 51.782594461 L 385.732790572 51.782594461 L 385.732790572 95.887643371 L 315.28539941099996 95.887643371 L 315.28539941099996 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="333.0090949915" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SW2</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 402.067993872 51.782594461 L 528.515385033 51.782594461 L 528.515385033 95.887643371 L 402.067993872 95.887643371 L 402.067993872 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="419.7916894525" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">TimeControl</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 544.850588333 51.782594461 L 668.2979794940001 51.782594461 L 668.2979794940001 95.887643371 L 544.850588333 95.887643371 L 544.850588333 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="562.5742839135" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">TimeDisplay</text>
+      </g>
+    </g>
+    <g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 114.47220872150001 128.558049971 L 350.5090949915 128.558049971 L 365.21077796149996 143.259732941 L 365.21077796149996 166.12901756099998 L 114.47220872150001 166.12901756099998 L 114.47220872150001 128.558049971 M 350.5090949915 128.558049971 L 350.5090949915 143.259732941 L 365.21077796149996 143.259732941" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="137.34149334149998" y="151.42733459099995" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Not Held Down nor Pressed</text>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="491.98270618800007" y="190.631822511" width="87.90056099" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="494.4329866830001" y="205.33350548099997" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Show Time</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 465.2916894525 211.867586801 L 593.1249665298334 211.867586801" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(606.5742839135,211.867586801) translate(-606.5742839135,-211.867586801)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 592.9616144968334 205.06125209266665 L 606.5742839135 211.867586801 L 592.9616144968334 218.67392150933333 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="271.78251007700004" y="236.37039175099997" width="105.90056099" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="274.23279057200006" y="251.07207472099995" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Displays Time</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 606.5742839135 257.60615604099996 L 56.340614614166675 257.60615604099996" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(42.89129723050001,257.60615604099996) translate(-42.89129723050001,-257.60615604099996)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 56.50396664716668 250.79982133266662 L 42.89129723050001 257.60615604099996 L 56.50396664716668 264.4124907493333 Z"/>
+        </g>
+      </g>
+    </g>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+  </g>
+</svg>
