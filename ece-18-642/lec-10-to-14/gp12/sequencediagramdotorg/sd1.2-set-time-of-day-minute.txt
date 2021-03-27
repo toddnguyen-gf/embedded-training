@@ -1,8 +1,8 @@
-title SD 1. Set Time of Day
+title SD1.2 - Set Time of Day Minute
 
 participant User
 
-participant "Switch Button 1" as SW1
+participant "Switch Button 2" as SW2
 participant ClockControl
 participant TimeControl
 participant TimeDisplay
@@ -10,6 +10,6 @@ participant TimeDisplay
 User->SW1:Holds down for 5+ seconds
 SW1->ClockControl:Seconds being held down
 
-ClockControl->TimeControl:""increaseHour(secondsHeldDown)""
+ClockControl->TimeControl:""increaseMinute(secondsHeldDown)""
 TimeControl->TimeDisplay:""updateTime()""
 TimeDisplay->User:Displays new time to user
