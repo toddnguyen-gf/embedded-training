@@ -1,0 +1,12 @@
+title SD2 - Show Time of Day
+
+participant User
+participant SW1
+participant SW2
+participant TimeControl
+participant TimeDisplay
+
+note over SW1,SW2:Not Held Down nor Pressed
+
+TimeControl->TimeDisplay: Show Time
+TimeDisplay->User: Displays Time
