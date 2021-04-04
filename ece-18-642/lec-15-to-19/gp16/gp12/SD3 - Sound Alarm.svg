@@ -1,0 +1,99 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="576" height="298">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="576" height="298"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="180.91605071786847" y="24.50280495" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD3 - Sound Alarm</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 42.89129723050001 95.887643371 L 42.89129723050001 298.444164291" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 157.17389169150002 95.887643371 L 157.17389169150002 298.444164291" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 376.56776207190364 95.887643371 L 376.56776207190364 298.444164291" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 520.128304205237 95.887643371 L 520.128304205237 298.444164291" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.167601650000002 51.782594461 L 77.61499281100001 51.782594461 L 77.61499281100001 95.887643371 L 8.167601650000002 95.887643371 L 8.167601650000002 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="25.891297230500008" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">User</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 93.95019611100001 51.782594461 L 220.397587272 51.782594461 L 220.397587272 95.887643371 L 93.95019611100001 95.887643371 L 93.95019611100001 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="111.67389169150002" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">TimeControl</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 309.8440664914036 51.782594461 L 443.29145765240366 51.782594461 L 443.29145765240366 95.887643371 L 309.8440664914036 95.887643371 L 309.8440664914036 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="327.56776207190364" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">AlarmControl</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 472.40460862473697 51.782594461 L 567.851999785737 51.782594461 L 567.851999785737 95.887643371 L 472.40460862473697 95.887643371 L 472.40460862473697 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="490.128304205237" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">BUZZER</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="176.50388226316667" y="128.558049971" width="180.73388923707031" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="monospace" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="178.95416275816666" y="143.259732941" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">messageIsAlarmTime()</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 157.17389169150002 149.793814261 L 363.118444688237 149.793814261" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(376.56776207190364,149.793814261) translate(-376.56776207190364,-149.793814261)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 362.95509265523697 142.98747955266666 L 376.56776207190364 149.793814261 L 362.95509265523697 156.60014896933333 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="395.8977526435703" y="174.296619211" width="104.90056099" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="398.3480331385703" y="188.99830218099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Signal to Ring</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 376.56776207190364 195.532383501 L 506.67898682157033 195.532383501" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(520.128304205237,195.532383501) translate(-520.128304205237,-195.532383501)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 506.5156347885703 188.72604879266666 L 520.128304205237 195.532383501 L 506.5156347885703 202.33871820933334 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="251.05952022286849" y="220.035188451" width="60.90056099" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="253.50980071786847" y="234.736871421" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">RING!!!</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 520.128304205237 241.270952741 L 56.340614614166675 241.270952741" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(42.89129723050001,241.270952741) translate(-42.89129723050001,-241.270952741)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 56.50396664716668 234.46461803266666 L 42.89129723050001 241.270952741 L 56.50396664716668 248.07728744933334 Z"/>
+        </g>
+      </g>
+    </g>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+  </g>
+</svg>

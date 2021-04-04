@@ -1,0 +1,10 @@
+title SD6 - Show Alarm State
+
+participant User
+participant ArmedLED
+
+note over ArmedLED:Is ON
+ArmedLED->User:Is ON when Alarm is on.
+
+note over ArmedLED:Is OFF
+ArmedLED->User:Is OFF when Alarm is on.

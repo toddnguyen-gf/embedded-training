@@ -1,0 +1,16 @@
+title SD8 - Show Alarm Time
+
+participant User
+participant SW1
+participant ClockControl
+participant AlarmControl
+participant Alarm
+participant ClockMode
+
+note over ClockControl,ClockMode:In NORMAL state (alarm not currently buzzing)
+
+User->SW1:Press
+SW1->ClockControl:Button is Pressed
+ClockControl->ClockMode:Transition to Alarm Mode
+ClockMode->AlarmControl:Alarm Control Takes Over Input
+AlarmControl->User:Show Alarm Time

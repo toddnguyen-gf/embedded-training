@@ -1,0 +1,12 @@
+title SD4 - Deactivate Alarm
+
+participant User
+participant SW1
+
+participant BUZZER
+participant AlarmControl
+
+note over BUZZER,AlarmControl:""isBuzzing()""
+User->SW1: Presses button
+SW1->AlarmControl: Button is Pressed
+AlarmControl->BUZZER: Turns Off

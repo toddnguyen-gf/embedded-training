@@ -1,0 +1,16 @@
+title SD5.2 - Set Alarm Armed State
+
+participant User
+participant SW1
+participant SW2
+participant AlarmControl
+participant Alarm
+participant ArmedLED
+
+note over AlarmControl: Alarm State ON
+note over SW1,SW2: Held Down Together
+
+User->SW2:Holds Down for 5+ seconds
+SW2->AlarmControl:Both Buttons Held
+AlarmControl->Alarm: Turns OFF
+AlarmControl->ArmedLED: Turns OFF
