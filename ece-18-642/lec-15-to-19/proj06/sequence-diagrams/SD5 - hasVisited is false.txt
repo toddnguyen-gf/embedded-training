@@ -1,0 +1,10 @@
+title SD5 - hasVisited is false
+
+participant Maze
+participant Turtle
+participant SurroundingSquares
+
+note over Turtle,SurroundingSquares: hasVisited is false
+Turtle->Turtle: 1. keep track of current orientation.
+Turtle->Maze: 2. Move in current orientation.
+note over Maze: Consult SD2 and SD3. Check for ""atend"", then move accordingly.

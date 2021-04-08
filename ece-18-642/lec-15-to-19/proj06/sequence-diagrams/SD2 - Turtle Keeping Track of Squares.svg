@@ -1,0 +1,97 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="714" height="483">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="714" height="483"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="164.75859140746797" y="26.3876361" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD2 - Turtle Keeping Track of Squares</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 210.79933906 103.26361593799999 L 210.79933906 483.245575778" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 668.5092377991928 103.26361593799999 L 668.5092377991928 483.245575778" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 171.7643662501162 55.765870957999994 L 249.83431186988378 55.765870957999994 L 249.83431186988378 103.26361593799999 L 171.7643662501162 103.26361593799999 L 171.7643662501162 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="190.8514230291162" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Turtle</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 631.068014989309 55.765870957999994 L 705.9504606090766 55.765870957999994 L 705.9504606090766 103.26361593799999 L 631.068014989309 103.26361593799999 L 631.068014989309 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="650.155071768309" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Maze</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="370.4634389431315" y="138.44713073799997" width="138.38169897292968" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="373.1022025531315" y="154.279712398" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">1. Requests a move</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 668.5092377991928 161.31641535799997 L 225.28321931933334 161.31641535799997" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(210.79933906,161.31641535799997) translate(-210.79933906,-161.31641535799997)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 225.45913689333332 153.9865164413333 L 210.79933906 161.31641535799997 L 225.45913689333332 168.64631427466665 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="231.6162519833333" y="187.70405145799998" width="430.7358707258594" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="234.25501559333333" y="203.536633118" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">2. Use Dijkstra to think up of move (Please take a look at SD-3)</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 210.79933906 210.57333607799998 L 281.16636866 210.57333607799998 L 281.16636866 233.44262069799998 L 225.28321931933334 233.44262069799998" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(210.79933906,233.44262069799998) translate(-210.79933906,-233.44262069799998)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 225.45913689333332 226.1127217813333 L 210.79933906 233.44262069799998 L 225.45913689333332 240.77251961466666 Z"/>
+        </g>
+      </g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.7958787 259.830256798 L 396.97021775999997 259.830256798 L 412.80279942 275.662838458 L 412.80279942 300.291298818 L 8.7958787 300.291298818 L 8.7958787 259.830256798 M 396.97021775999997 259.830256798 L 396.97021775999997 275.662838458 L 412.80279942 275.662838458" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="33.424339059999994" y="284.45871715799996" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Turtle determines that move is MOVE, not a ROTATE</text>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="231.6162519833333" y="326.678934918" width="248.9233554670703" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="234.25501559333333" y="342.511516578" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">3. Marks current square as "visited"</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 210.79933906 349.548219538 L 281.16636866 349.548219538 L 281.16636866 372.417504158 L 225.28321931933334 372.417504158" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(210.79933906,372.417504158) translate(-210.79933906,-372.417504158)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 225.45913689333332 365.08760524133334 L 210.79933906 372.417504158 L 225.45913689333332 379.74740307466664 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="382.81760688136393" y="398.805140258" width="113.67336309646484" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="385.45637049136394" y="414.637721918" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">4. Return MOVE</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 210.79933906 421.67442487799997 L 654.0253575398594 421.67442487799997" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(668.5092377991928,421.67442487799997) translate(-668.5092377991928,-421.67442487799997)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 653.8494399658595 414.3445259613333 L 668.5092377991928 421.67442487799997 L 653.8494399658595 429.0043237946666 Z"/>
+        </g>
+      </g>
+    </g>
+    <g/>
+    <g/>
+  </g>
+</svg>

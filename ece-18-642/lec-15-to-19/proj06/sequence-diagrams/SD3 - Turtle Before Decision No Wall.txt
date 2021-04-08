@@ -1,0 +1,14 @@
+title SD3 - Turtle Before Decision No Wall
+
+participant Maze
+participant Turtle
+participant SurroundingSquares
+
+note over Maze:before each move / rotation
+
+Maze->Turtle: 1. ""bumped"" is False
+Maze->Turtle: 1a. ""atend"" is False
+Turtle->Turtle: 3. take note of beginning orientation before rotation
+Turtle->SurroundingSquares: 4. hasVisited?
+note over Turtle,SurroundingSquares: Please look at SD4 if hasVisited is true, and SD5 if hasVisited is false
+note over Turtle,SurroundingSquares: Please look at SD6 if hasVisited is true but we are back at the beginning orientation.

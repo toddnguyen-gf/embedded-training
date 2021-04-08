@@ -1,0 +1,12 @@
+title SD1 - Turtle Reach End
+
+participant Turtle
+participant Maze
+participant ROS
+
+note over Maze: Immediately following a turtle movement
+
+Maze->ROS: 1. ""atend()""
+ROS->Maze: 2. returns True
+Maze->Turtle: 3. ""atend"" is true
+Turtle->Turtle: 4. Stops moving / rotating

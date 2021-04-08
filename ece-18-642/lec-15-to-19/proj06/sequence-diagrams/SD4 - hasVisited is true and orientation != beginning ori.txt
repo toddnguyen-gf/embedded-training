@@ -1,0 +1,9 @@
+title SD4 - hasVisited is true and orientation != beginning ori
+
+participant Maze
+participant Turtle
+participant SurroundingSquares
+
+note over Turtle,SurroundingSquares: hasVisited is true and orientation is not beginning orientation
+Turtle->Turtle: 1. Rotates Right
+Turtle->SurroundingSquares: 2. Check for hasVisited again. Refer to SD4 and SD5.

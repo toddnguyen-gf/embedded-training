@@ -1,0 +1,12 @@
+title SD2 - Turtle Keeping Track of Squares
+
+participant Turtle
+participant Maze
+
+Maze->Turtle: 1. Requests a move
+Turtle->Turtle: 2. Use Dijkstra to think up of move (Please take a look at SD-3)
+
+note over Turtle: Turtle determines that move is MOVE, not a ROTATE
+
+Turtle->Turtle: 3. Marks current square as "visited"
+Turtle->Maze: 4. Return MOVE
