@@ -32,3 +32,37 @@ I will employ **Dijkstra's algorithm** to try to get the shortest path to all sq
 | SD6  |     |     | x   |     |     |     |      | x   | x    | x    |     |
 | SD7a |     |     |     |     |     |     |      | x   | x    |      |     |
 | SD7b |     |     |     |     |     | x   | x    | x   |      | x    |     |
+
+# Write-Up Questions
+
+_Q1. In one or two sentences, why did your turtle fail at the more complicated mazes?_
+The turtle failed because the left-hand / right-hand rule only applies to mazes that are inter-connected. That is, every wall must be conneted to another wall or to an outer wall (the wall on the edges).
+
+_Q2. Briefly describe your solution strategy (your high level algorithmic approach). We have in mind 50-100 words, but shorter or longer is OK. This should be how you'd explain it to a friend, not a detailed algorithmic step-by-step description._
+Essentially, we will make sure the turtle visits every single cell, where the turtle will eventually visit the end cell. To do this, we will find the shortest path to all cells.
+
+_Q3. What difficulties did you encounter in this project?_
+Thinking of how the algorithm will work for the turtle was challenging for me, as the basic algorithm assumes that we'll have an omnipotent view of the maze. However, the turtle only has a limited view of the maze, so I had to tweak the algorithm a little bit so that it can work with the turtle's limited view.
+
+_Q4. The final version of your high level requirements after iteration. Start numbering at R1._
+Please see the section [High Level Software Requirements](#high-level-software-requirements)
+
+_Q5. The final version of your sequence diagrams. SD1._
+
+![SD1](sequence-diagrams/SD1%20-%20Turtle%20Reach%20End.svg "SD1")
+
+![SD2](sequence-diagrams/SD2%20-%20Turtle%20Keeping%20Track%20of%20Squares.svg "SD2")
+
+![SD3](sequence-diagrams/SD3%20-%20Turtle%20Before%20Decision%20No%20Wall.svg "SD3")
+
+![SD3A](sequence-diagrams/SD3A%20-%20There%20is%20a%20wall.svg "SD3A")
+
+![SD4](sequence-diagrams/SD4%20-%20hasVisited%20is%20true%20and%20orientation%20!=%20beginning%20ori.svg "SD4")
+
+![SD5](sequence-diagrams/SD5%20-%20hasVisited%20is%20false.svg "SD5")
+
+![SD6](sequence-diagrams/SD6%20-%20hasVisited%20is%20true%20and%20orientation%20==%20beginning%20ori.svg "SD6")
+
+![SD7A](sequence-diagrams/SD7A%20-%20One%20Square%20WIth%20Lowest%20Number%20of%20Vistis.svg "SD7A")
+
+![SD7B](sequence-diagrams/SD7B%20-%20Multiple%20squares%20with%20the%20lowest%20number%20of%20visits.svg "SD7B")
