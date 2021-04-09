@@ -1,4 +1,4 @@
-# Statechart peer review starter checklist
+# Statechart peer review checklist
 
 Modify, update, add, edit as seems appropriate
 
@@ -10,5 +10,3 @@ Modify, update, add, edit as seems appropriate
 1. Each state has all side effects identified as being set to a value
 1. No use of boolean variables that could instead be expressed as states
 1. Each state has at least one entrance and one exit (except any intentional "death states" to handle system failures).
-
-Last update 9/5/2020

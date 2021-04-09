@@ -1,4 +1,4 @@
-# Sequence Diagram peer review starter checklist
+# Sequence Diagram peer review checklist
 
 Modify, update, add, edit as seems appropriate
 1. SD has a unique identifier and descriptive nickname phrase (e.g., SD-5: Turn around at dead end.)
@@ -10,5 +10,3 @@ Modify, update, add, edit as seems appropriate
 1. Side effects: Relevant side effects noted in bubbles
 1. Postconditions: Relevant postconditions in bubbles at bottom
 1. SD traced to one or more system requirements
-
-Last update 9/5/2020
