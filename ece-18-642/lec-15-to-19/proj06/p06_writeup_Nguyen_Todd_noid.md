@@ -4,7 +4,7 @@
 - Student ID: noid
 - Date: April 6, 2021
 
-## High Level Software Requirements
+# High Level Software Requirements
 
 I will employ **Dijkstra's algorithm** to try to get the shortest path to all squares of the maze. By doing this, the turtle shall reach the end square eventually.
 
@@ -18,3 +18,17 @@ I will employ **Dijkstra's algorithm** to try to get the shortest path to all sq
 - R-7. If there are only visited squares / walls, the turtle shall prioritize the square with LESS number of visits.
   - R-7a. The turtle shall rotate until it finds a square with the less number of visits.
   - R-7b. If the number of visits are the same, the turtle shall choose the first square that it rotates to and continue in that route.
+- R-8. The turtle shall not travel across a wall.
+
+# Traceability Table
+
+|      | R-1 | R-2 | R-3 | R-4 | R-5 | R-6 | R-6a | R-7 | R-7a | R-7b | R-8 |
+| ---- | --- | --- | --- | --- | --- | --- | ---- | --- | ---- | ---- | --- |
+| SD1  | x   |     |     |     |     |     |      |     |      |      |     |
+| SD2  |     | x   | x   |     |     |     |      |     |      |      |     |
+| SD3  |     |     |     | x   | x   | x   | x    | x   | x    | x    | x   |
+| SD4  |     |     |     |     |     | x   | x    | x   |      |      |     |
+| SD5  |     |     |     | x   | x   |     |      |     |      |      |     |
+| SD6  |     |     | x   |     |     |     |      | x   | x    | x    |     |
+| SD7a |     |     |     |     |     |     |      | x   | x    |      |     |
+| SD7b |     |     |     |     |     | x   | x    | x   |      | x    |     |
