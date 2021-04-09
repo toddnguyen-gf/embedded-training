@@ -1,0 +1,15 @@
+title SD1.1 - Set Time of Day Hour
+
+participant User
+
+participant "Switch Button 1" as SW1
+participant ClockControl
+participant TimeControl
+participant TimeDisplay
+
+User->SW1:Holds down for 5+ seconds
+SW1->ClockControl:Seconds being held down
+
+ClockControl->TimeControl:""increaseHour(secondsHeldDown)""
+TimeControl->TimeDisplay:""updateTime()""
+TimeDisplay->User:Displays new time to user

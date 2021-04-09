@@ -1,0 +1,81 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="681" height="361">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="681" height="361"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="55.493008813273434" y="26.3876361" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD4 - hasVisited is true and orientation != beginning ori</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 46.23293586046972 103.26361593799999 L 46.23293586046972 361.862449718" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 140.2988079628789 103.26361593799999 L 140.2988079628789 361.862449718" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 581.9905714663945 103.26361593799999 L 581.9905714663945 361.862449718" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.795878699999996 55.765870957999994 L 83.66999302093944 55.765870957999994 L 83.66999302093944 103.26361593799999 L 8.795878699999996 103.26361593799999 L 8.795878699999996 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="27.882935478999997" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Maze</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 101.26175042093945 55.765870957999994 L 179.33586550481834 55.765870957999994 L 179.33586550481834 103.26361593799999 L 101.26175042093945 103.26361593799999 L 101.26175042093945 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="120.34880719993944" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Turtle</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 491.7410162132734 55.765870957999994 L 672.2401267195156 55.765870957999994 L 672.2401267195156 103.26361593799999 L 491.7410162132734 103.26361593799999 L 491.7410162132734 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="510.8280729922734" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SurroundingSquares</text>
+      </g>
+    </g>
+    <g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 124.4662263028789 138.447130738 L 581.9905714663945 138.447130738 L 597.8231531263945 154.279712398 L 597.8231531263945 178.90817275799998 L 124.4662263028789 178.90817275799998 L 124.4662263028789 138.447130738 M 581.9905714663945 138.447130738 L 581.9905714663945 154.279712398 L 597.8231531263945 154.279712398" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="149.09468666287887" y="163.07559109800002" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">hasVisited is true and orientation is not beginning orientation</text>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="161.11572088621222" y="205.295808858" width="113.6775287458789" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="163.75448449621223" y="221.128390518" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">1. Rotates Right</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 140.2988079628789 228.165093478 L 210.6658375628789 228.165093478 L 210.6658375628789 251.034378098 L 154.78268822221224 251.034378098" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(140.2988079628789,251.034378098) translate(-140.2988079628789,-251.034378098)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 154.95860579621223 243.7044791813333 L 140.2988079628789 251.034378098 L 154.95860579621223 258.36427701466664 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="180.34342000112105" y="277.422014198" width="361.6025394270313" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="182.98218361112106" y="293.254595858" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">2. Check for hasVisited again. Refer to SD4 and SD5.</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 140.2988079628789 300.291298818 L 567.5066912070612 300.291298818" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(581.9905714663945,300.291298818) translate(-581.9905714663945,-300.291298818)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 567.3307736330612 292.9613999013333 L 581.9905714663945 300.291298818 L 567.3307736330612 307.6211977346666 Z"/>
+        </g>
+      </g>
+    </g>
+    <g/>
+    <g/>
+    <g/>
+  </g>
+</svg>

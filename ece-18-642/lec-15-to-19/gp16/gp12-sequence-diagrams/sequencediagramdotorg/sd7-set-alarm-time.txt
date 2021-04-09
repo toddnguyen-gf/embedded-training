@@ -1,0 +1,29 @@
+bottomparticipants 
+
+title SD7 - Set Alarm Time
+
+participant User
+participant SW1
+participant SW2
+participant ClockControl
+participant AlarmControl
+participant Alarm
+participant ClockMode
+
+note over ClockControl,ClockMode:In NORMAL state (alarm not currently buzzing)
+
+User->SW1:Press
+SW1->ClockControl:Button is Pressed
+ClockControl->ClockMode:Transition to Alarm Mode
+ClockMode->AlarmControl:Alarm Control Takes Over Input
+
+note over User,SW2:Clock in Alarm mode
+note over User,SW2:Button is Pressed
+User->SW2:Press
+SW2->AlarmControl:Button is Pressed
+AlarmControl->Alarm:Advances Alarm Time by 1 minute
+
+note over User,SW2:Button is Held Down
+User->SW2:Holds Down for 5+ seconds
+SW2->AlarmControl:Button is Held Down
+AlarmControl->Alarm:Advances Alarm Time by 5 minutes per second of button held

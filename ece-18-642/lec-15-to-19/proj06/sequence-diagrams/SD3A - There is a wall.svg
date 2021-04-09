@@ -1,0 +1,78 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="439" height="272">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="439" height="272"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="109.85904539324986" y="26.3876361" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD3A - There is a wall</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 46.23293586046972 103.26361593799999 L 46.23293586046972 272.1444869779999" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 193.09428969007584 103.26361593799999 L 193.09428969007584 272.1444869779999" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 339.9726598851364 103.26361593799999 L 339.9726598851364 272.1444869779999" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.795878699999996 55.765870957999994 L 83.66999302093944 55.765870957999994 L 83.66999302093944 103.26361593799999 L 8.795878699999996 103.26361593799999 L 8.795878699999996 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="27.882935478999997" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Maze</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 154.0572321481364 55.765870957999994 L 232.1313472320153 55.765870957999994 L 232.1313472320153 103.26361593799999 L 154.0572321481364 103.26361593799999 L 154.0572321481364 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="173.1442889271364" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Turtle</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 249.7231046320153 55.765870957999994 L 430.2222151382575 55.765870957999994 L 430.2222151382575 103.26361593799999 L 249.7231046320153 103.26361593799999 L 249.7231046320153 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="268.8101614110153" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SurroundingSquares</text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="67.04984878380306" y="138.44713073799997" width="105.22752798293945" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="monospace" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="69.68861239380306" y="154.279712398" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">bumped</text>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="122.4886116308636" y="154.279712398" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve"> is true</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 46.23293586046972 161.31641535799997 L 178.6104094307425 161.31641535799997" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(193.09428969007584,161.31641535799997) translate(-193.09428969007584,-161.31641535799997)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 178.4344918567425 153.9865164413333 L 193.09428969007584 161.31641535799997 L 178.4344918567425 168.64631427466665 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="73.98735069115169" y="187.70405145799995" width="91.35252416824218" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="76.62611430115169" y="203.53663311799997" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Rotate right.</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 193.09428969007584 210.57333607799995 L 60.716816119803056 210.57333607799995" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(46.23293586046972,210.57333607799995) translate(-46.23293586046972,-210.57333607799995)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 60.89273369380305 203.24343716133328 L 46.23293586046972 210.57333607799995 L 60.89273369380305 217.90323499466663 Z"/>
+        </g>
+      </g>
+    </g>
+    <g/>
+    <g/>
+    <g/>
+  </g>
+</svg>

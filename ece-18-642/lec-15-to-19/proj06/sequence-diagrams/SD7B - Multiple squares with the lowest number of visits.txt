@@ -1,0 +1,5 @@
+title SD7B - Multiple squares with the lowest number of visits
+
+Turtle->Turtle: 1. Rotate to orientation with lowest number of visits.
+Turtle->Turtle: 2. Stop at whichever orientation comes up first.
+Turtle->Maze: 3. Go that orientation.

@@ -1,0 +1,8 @@
+title SD3A - There is a wall
+
+participant Maze
+participant Turtle
+participant SurroundingSquares
+
+Maze->Turtle:""bumped"" is true
+Turtle->Maze:Rotate right.

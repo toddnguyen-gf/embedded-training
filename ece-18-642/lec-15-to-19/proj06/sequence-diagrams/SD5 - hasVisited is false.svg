@@ -1,0 +1,90 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="881" height="428">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="881" height="428"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="320.2538368418633" y="26.3876361" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD5 - hasVisited is false</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 249.9493405858789 103.26361593799999 L 249.9493405858789 428.7111278379999" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 506.0606906007878 103.26361593799999 L 506.0606906007878 428.7111278379999" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 782.3872427823633 103.26361593799999 L 782.3872427823633 428.7111278379999" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray="13.532121076923076,5.863919133333333"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 212.51228342540918 55.765870957999994 L 287.3863977463486 55.765870957999994 L 287.3863977463486 103.26361593799999 L 212.51228342540918 103.26361593799999 L 212.51228342540918 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="231.59934020440917" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Maze</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 467.0236330588483 55.765870957999994 L 545.0977481427273 55.765870957999994 L 545.0977481427273 103.26361593799999 L 467.0236330588483 103.26361593799999 L 467.0236330588483 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="486.1106898378483" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Turtle</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 692.1376875292422 55.765870957999994 L 872.6367980354844 55.765870957999994 L 872.6367980354844 103.26361593799999 L 692.1376875292422 103.26361593799999 L 692.1376875292422 55.765870957999994 Z" stroke-miterlimit="10" stroke-width="2.814681184" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="711.2247443082422" y="85.67185853800001" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SurroundingSquares</text>
+      </g>
+    </g>
+    <g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 490.22810894078776 138.447130738 L 782.3872427823633 138.447130738 L 798.2198244423632 154.279712398 L 798.2198244423632 178.90817275799998 L 490.22810894078776 178.90817275799998 L 490.22810894078776 138.447130738 M 782.3872427823633 138.447130738 L 782.3872427823633 154.279712398 L 798.2198244423632 154.279712398" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="583.6739674545149" y="163.07559109800002" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">hasVisited is false</text>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="526.8776035241211" y="205.295808858" width="249.35252416824218" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="529.5163671341211" y="221.128390518" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">1. keep track of current orientation.</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 506.0606906007878 228.165093478 L 576.4277202007878 228.165093478 L 576.4277202007878 251.034378098 L 520.5445708601211 251.034378098" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(506.0606906007878,251.034378098) translate(-506.0606906007878,-251.034378098)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 520.7204884341211 243.7044791813333 L 506.0606906007878 251.034378098 L 520.7204884341211 258.36427701466664 Z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="270.7662535092123" y="277.422014198" width="214.47752416824218" height="22.86928462"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="273.4050171192123" y="293.254595858" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">2. Move in current orientation.</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 506.0606906007878 300.291298818 L 264.43322084521225 300.291298818" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+        <g transform="translate(249.9493405858789,300.291298818) translate(-249.9493405858789,-300.291298818)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 264.60913841921223 292.9613999013333 L 249.9493405858789 300.291298818 L 264.60913841921223 307.6211977346666 Z"/>
+        </g>
+      </g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.7958787 326.678934918 L 475.2702208117578 326.678934918 L 491.1028024717578 342.511516578 L 491.1028024717578 367.13997693799996 L 8.7958787 367.13997693799996 L 8.7958787 326.678934918 M 475.2702208117578 326.678934918 L 475.2702208117578 342.511516578 L 491.1028024717578 342.511516578" stroke-miterlimit="10" stroke-width="1.4659797833333332" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="33.424339059999994" y="351.30739527799994" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Consult SD2 and SD3. Check for </text>
+        <text fill="black" stroke="none" font-family="monospace" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="254.8493421117578" y="351.30739527799994" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">atend</text>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="298.8493421117578" y="351.30739527799994" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">, then move accordingly.</text>
+      </g>
+    </g>
+    <g/>
+    <g/>
+    <g/>
+  </g>
+</svg>

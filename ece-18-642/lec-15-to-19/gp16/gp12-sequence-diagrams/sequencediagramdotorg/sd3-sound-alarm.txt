@@ -1,0 +1,10 @@
+title SD3 - Sound Alarm
+
+participant User
+participant TimeControl
+participant AlarmControl
+participant BUZZER
+
+TimeControl->AlarmControl: ""messageIsAlarmTime()""
+AlarmControl->BUZZER: Signal to Ring
+BUZZER->User: RING!!!

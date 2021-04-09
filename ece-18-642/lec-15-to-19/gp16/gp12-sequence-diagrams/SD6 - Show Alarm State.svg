@@ -1,0 +1,76 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="336" height="376">
+  <defs/>
+  <g>
+    <g/>
+    <g/>
+    <g/>
+    <g/>
+    <g>
+      <rect fill="white" stroke="none" x="0" y="0" width="336" height="376"/>
+    </g>
+    <g>
+      <text fill="black" stroke="none" font-family="sans-serif" font-size="16.5pt" font-style="normal" font-weight="normal" text-decoration="normal" x="32.931990050096346" y="24.50280495" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">SD6 - Show Alarm State</text>
+    </g>
+    <g/>
+    <g>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 42.89129723050001 95.887643371 L 42.89129723050001 376.853140131" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+      <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 272.4518393638333 95.887643371 L 272.4518393638333 376.853140131" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray="12.565541,5.445067766666667"/>
+    </g>
+    <g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 8.167601650000002 51.782594461 L 77.61499281100001 51.782594461 L 77.61499281100001 95.887643371 L 8.167601650000002 95.887643371 L 8.167601650000002 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="25.891297230500008" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">User</text>
+      </g>
+      <path fill="none" stroke="none"/>
+      <g>
+        <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 216.22814378333328 51.782594461 L 328.6755349443333 51.782594461 L 328.6755349443333 95.887643371 L 216.22814378333328 95.887643371 L 216.22814378333328 51.782594461 Z" stroke-miterlimit="10" stroke-width="2.613632528" stroke-dasharray=""/>
+      </g>
+      <g>
+        <g/>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="233.9518393638333" y="79.55244007099999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">ArmedLED</text>
+      </g>
+    </g>
+    <g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 229.0825547438333 128.558049971 L 301.11944101383335 128.558049971 L 315.82112398383333 143.259732941 L 315.82112398383333 166.12901756099998 L 229.0825547438333 166.12901756099998 L 229.0825547438333 128.558049971 M 301.11944101383335 128.558049971 L 301.11944101383335 143.259732941 L 315.82112398383333 143.259732941" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="251.9518393638333" y="151.42733459099995" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Is ON</text>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="65.72128780216666" y="190.631822511" width="183.90056099" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="68.17156829716666" y="205.33350548099997" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Is ON when Alarm is on.</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 272.4518393638333 211.867586801 L 56.340614614166675 211.867586801" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(42.89129723050001,211.867586801) translate(-42.89129723050001,-211.867586801)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 56.50396664716668 205.06125209266665 L 42.89129723050001 211.867586801 L 56.50396664716668 218.67392150933333 Z"/>
+        </g>
+      </g>
+      <path fill="white" stroke="black" paint-order="fill stroke markers" d=" M 225.5825547438333 236.37039175099994 L 304.61944101383335 236.37039175099994 L 319.32112398383333 251.07207472099995 L 319.32112398383333 273.94135934099995 L 225.5825547438333 273.94135934099995 L 225.5825547438333 236.37039175099994 M 304.61944101383335 236.37039175099994 L 304.61944101383335 251.07207472099995 L 319.32112398383333 251.07207472099995" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+      <g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="248.4518393638333" y="259.2396763709999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Is OFF</text>
+      </g>
+      <g>
+        <g>
+          <rect fill="white" stroke="none" x="62.22128780216666" y="298.44416429099994" width="190.90056099" height="21.23576429"/>
+        </g>
+        <text fill="black" stroke="none" font-family="sans-serif" font-size="11pt" font-style="normal" font-weight="normal" text-decoration="normal" x="64.67156829716666" y="313.1458472609999" text-anchor="start" dominant-baseline="alphabetic" xml:space="preserve">Is OFF when Alarm is on.</text>
+      </g>
+      <g>
+        <path fill="none" stroke="black" paint-order="fill stroke markers" d=" M 272.4518393638333 319.67992858099996 L 56.340614614166675 319.67992858099996" stroke-miterlimit="10" stroke-width="1.3612669416666667" stroke-dasharray=""/>
+        <g transform="translate(42.89129723050001,319.67992858099996) translate(-42.89129723050001,-319.67992858099996)">
+          <path fill="black" stroke="none" paint-order="stroke fill markers" d=" M 56.50396664716668 312.8735938726666 L 42.89129723050001 319.67992858099996 L 56.50396664716668 326.4862632893333 Z"/>
+        </g>
+      </g>
+    </g>
+    <g/>
+    <g/>
+  </g>
+</svg>

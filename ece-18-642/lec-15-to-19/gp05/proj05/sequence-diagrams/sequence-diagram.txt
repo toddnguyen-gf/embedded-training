@@ -1,0 +1,16 @@
+# https://sequencediagram.org/
+
+title Maze and Turtle
+
+participant Maze
+participant student_maze
+participant student_turtle
+
+Maze->student_maze:tick of time
+student_maze->Maze:""bumped()"" & ""atend()""
+Maze->student_maze:returns ""bumped"" and ""atend""
+student_maze->student_turtle:requests move. sends ""bumped"" and ""atend""
+student_turtle->student_turtle:determine if turtle stops, rotates, or moves
+student_turtle->student_maze:sends move
+student_maze->Maze:moves/rotates turtle
+

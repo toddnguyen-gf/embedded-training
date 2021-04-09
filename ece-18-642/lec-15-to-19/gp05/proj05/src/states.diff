@@ -1,0 +1,484 @@
+commit f5660d56325ee0360a87060c8e3b10e317b2aacf
+Author: Todd Nguyen <todd.nguyen@georgfischer.com>
+Date:   Mon Mar 29 20:48:18 2021 -0700
+
+    Refactor to use states!
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 8595652..7b1f8a2 100755
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -44,6 +44,7 @@ set(ece642rtle_student_SRCS
+   ${CMAKE_CURRENT_SOURCE_DIR}/student/noid_student_maze.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/student/noid_student_turtle.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/student/properties.cpp
++  ${CMAKE_CURRENT_SOURCE_DIR}/student/student.cpp
+   )
+ 
+ # Build the monitors: each target must be in quotes.
+diff --git a/student/noid_student_turtle.cpp b/student/noid_student_turtle.cpp
+index 05c4820..acaa8fb 100755
+--- a/student/noid_student_turtle.cpp
++++ b/student/noid_student_turtle.cpp
+@@ -23,18 +23,14 @@ static TurtleHandRule _fs_turtle_rule = TurtleHandRule::kRightHand;
+ typedef uint16_t Timeout;
+ 
+ typedef enum State {
+-  kHasWall = 0,
++  kAfterMove = 0,
+   kIdle,
++  kWallDetected,
+   kMove,
+ } State;
+ 
+-typedef struct TurtleHandRulePair {
+-  turtleMove rule_at_wall;
+-  turtleMove rule_no_wall;
+-} TurtleHandRulePair;
+-
+ /** bigger number slows down simulation so you can see what's happening */
+-static const Timeout TIMEOUT_MAX = 10;
++static const Timeout TIMEOUT_MAX = 5;
+ static const uint8_t _FS_SQUARE_SIZE = 23;
+ static const char *STATE_STR[] = {"NO WALL", "HAS A WALL",
+         "GO THIS ORIENTATION"
+@@ -42,27 +38,23 @@ static const char *STATE_STR[] = {"NO WALL", "HAS A WALL",
+ 
+ static Timeout _fs_current_timeout = 0;
+ static uint8_t _fsTurtleMap[_FS_SQUARE_SIZE * _FS_SQUARE_SIZE] = {0};
+-static State _fs_current_state;
++static State _fs_current_state = State::kAfterMove;
+ static Coordinates _fs_relative_coords(
+     (_FS_SQUARE_SIZE / 2), (_FS_SQUARE_SIZE / 2)
+ );
+ static Orientation _fs_relative_orientation = Orientation::kWest;
+ 
+ static bool _checkBounds(uint32_t row, uint32_t col);
+-static bool _decrementAndCheckCurTime(bool atend);
+-static turtleMove _rotateTurtle(bool bumped, bool atend);
+-static turtleMove _moveTurtleBaseOnOrientation(turtleMove turtle_move_decision,
+-    bool atend);
+-
+-static turtleMove _rotateTurtleLeftHand(bool bumped);
+-static turtleMove _rotateTurtleRightHand(bool bumped);
+-static turtleMove _setOrientationAndCurrentState(
+-    Orientation orientation_after_move,
+-    Orientation orientation_maze_contains_wall,
+-    bool maze_contains_wall);
+-static TurtleHandRulePair _getTurtleMoveBaseOnHandRule();
++static bool _decrementAndCheckCurTime();
+ static int16_t _getTurtleMapNumVisits(Coordinates coordinates);
+ static void _setTurtleMapValue(Coordinates coordinates, uint16_t value);
++static turtleMove _handleAfterMoveState();
++static turtleMove _handleIdleState(bool bumped);
++static turtleMove _handleWallDetectedState();
++static turtleMove _handleMoveState();
++static void _moveActualTurtle();
++static void _rotateLeft();
++static void _rotateRight();
+ 
+ // o-------------------------------------------------------
+ // | PUBLIC FUNCTION IMPLEMENTATIONS
+@@ -71,20 +63,41 @@ static void _setTurtleMapValue(Coordinates coordinates, uint16_t value);
+ // Ignore this line until project 5
+ turtleMove studentTurtleStep(bool bumped, bool atend) {
+   turtleMove turtle_move_decision = turtleMove::NO_MOVE;
++  if (atend) {
++    return turtle_move_decision;
++  }
+ 
+   if (0 == _fs_current_timeout) {
+-    turtle_move_decision = _rotateTurtle(bumped, atend);
+-    turtle_move_decision = _moveTurtleBaseOnOrientation(turtle_move_decision, atend);
++    switch(_fs_current_state) {
++      case State::kAfterMove:
++        turtle_move_decision = _handleAfterMoveState();
++        break;
++      case State::kIdle:
++        turtle_move_decision = _handleIdleState(bumped);
++        break;
++      case State::kWallDetected:
++        turtle_move_decision = _handleWallDetectedState();
++        break;
++      case State::kMove:
++        turtle_move_decision = _handleMoveState();
++        break;
++      default:
++        ROS_ERROR("No proper state");
++        break;
++    }
+ 
+-    ROS_INFO("Row (y): %2d, Col (x): %2d\n  Orientation: %5s, Num Visits: %2d",
+-        _fs_relative_coords.y,
+-        _fs_relative_coords.x,
+-        PROPERTIES_getOrientationString(_fs_relative_orientation),
+-        _getTurtleMapNumVisits(_fs_relative_coords)
+-    );
++    if (turtle_move_decision != turtleMove::NO_MOVE) {
++      ROS_INFO("Row (y): %2d, Col (x): %2d\n  Orientation: %5s, Num Visits: %2d, Move: '%s'",
++          _fs_relative_coords.y,
++          _fs_relative_coords.x,
++          PROPERTIES_getOrientationString(_fs_relative_orientation),
++          _getTurtleMapNumVisits(_fs_relative_coords),
++          STUDENT_getTurtleMoveDecisionString(turtle_move_decision)
++      );
++    }
+   }
+ 
+-  bool isTimeoutAtMax = _decrementAndCheckCurTime(atend);
++  bool isTimeoutAtMax = _decrementAndCheckCurTime();
+   if (!isTimeoutAtMax) {
+     // Not time yet OR we are already at goal, do not move
+     turtle_move_decision = turtleMove::NO_MOVE;
+@@ -101,195 +114,161 @@ int16_t STUDENT_TURTLE_getNumberOfVisits() {
+ // | PRIVATE FUNCTION IMPLEMENTATIONS
+ // o-------------------------------------------------------
+ 
+-static turtleMove _rotateTurtle(bool bumped, bool atend) {
++static bool _checkBounds(uint32_t row, uint32_t col) {
++  bool is_within_bounds = true;
++  if (row < 0 || row >= _FS_SQUARE_SIZE) {
++    is_within_bounds = false;
++  } else if (col < 0 || col >= _FS_SQUARE_SIZE) {
++    is_within_bounds = false;
++  }
++
++  return is_within_bounds;
++}
++
++/**
++ * Calculate and return if timeout is 0 for the next movement.
++ */
++static bool _decrementAndCheckCurTime() {
++  if (_fs_current_timeout == 0) {
++    _fs_current_timeout = TIMEOUT_MAX;
++  } else {
++    _fs_current_timeout -= 1;
++  }
++
++  return TIMEOUT_MAX == _fs_current_timeout;
++}
++
++static int16_t _getTurtleMapNumVisits(Coordinates coordinates) {
++  uint8_t x = coordinates.x;
++  uint8_t y = coordinates.y;
++  if (!_checkBounds(x, y)) {
++    return -1;
++  }
++  const uint16_t index = y * _FS_SQUARE_SIZE + x;
++  return _fsTurtleMap[index];
++}
++
++static void _setTurtleMapValue(Coordinates coordinates, uint16_t value) {
++  int x = coordinates.x;
++  int y = coordinates.y;
++  if (!_checkBounds(x, y)) {
++    return;
++  }
++  const uint16_t index = y * _FS_SQUARE_SIZE + x;
++  _fsTurtleMap[index] = value;
++}
++
++static turtleMove _handleAfterMoveState() {
++  _fs_current_state = State::kIdle;
+   turtleMove turtle_move_decision = turtleMove::NO_MOVE;
+   switch (_fs_turtle_rule) {
+     case TurtleHandRule::kLeftHand:
+-      turtle_move_decision = _rotateTurtleLeftHand(bumped);
++      _rotateLeft();
++      turtle_move_decision = turtleMove::TURN_LEFT;
+       break;
+     case TurtleHandRule::kRightHand:
+-      turtle_move_decision = _rotateTurtleRightHand(bumped);
++      _rotateRight();
++      turtle_move_decision = turtleMove::TURN_RIGHT;
+       break;
+     default:
+-      ROS_ERROR("No proper TurtleHandRule chosen");
++      ROS_ERROR("Improper turtle hand rule selected");
+       break;
+   }
+   return turtle_move_decision;
+ }
+ 
+-static turtleMove _moveTurtleBaseOnOrientation(turtleMove turtle_move_decision,
+-    bool atend) {
+-  // Now see if we move or not
+-  bool move_this_orientation = (_fs_current_state == State::kMove);
+-  if (move_this_orientation && !atend) {
+-    // We are moving
+-    switch (_fs_relative_orientation) {
+-      case Orientation::kWest:
+-        _fs_relative_coords.x -= 1;
+-        break;
+-      case Orientation::kNorth:
+-        _fs_relative_coords.y -= 1;
+-        break;
+-      case Orientation::kEast:
+-        _fs_relative_coords.x += 1;
+-        break;
+-      case Orientation::kSouth:
+-        _fs_relative_coords.y += 1;
+-        break;
+-      default:
+-        ROS_ERROR("Not proper orientation");
+-        break;
+-    }
+-
+-    move_this_orientation = false;
+-    int num_visits = _getTurtleMapNumVisits(_fs_relative_coords);
+-    _setTurtleMapValue(_fs_relative_coords, num_visits + 1);
+-    turtle_move_decision = turtleMove::MOVE;
++static turtleMove _handleIdleState(bool bumped) {
++  if (bumped) {
++    _fs_current_state = State::kWallDetected;
++  } else {
++    _fs_current_state = State::kMove;
+   }
++  return turtleMove::NO_MOVE;
++}
+ 
++static turtleMove _handleWallDetectedState() {
++  _fs_current_state = State::kIdle;
++  turtleMove turtle_move_decision = turtleMove::NO_MOVE;
++  switch (_fs_turtle_rule) {
++    case TurtleHandRule::kLeftHand:
++      _rotateRight();
++      turtle_move_decision = turtleMove::TURN_RIGHT;
++      break;
++    case TurtleHandRule::kRightHand:
++      _rotateLeft();
++      turtle_move_decision = turtleMove::TURN_LEFT;
++      break;
++    default:
++      ROS_ERROR("Improper turtle hand rule selected");
++      break;
++  }
+   return turtle_move_decision;
+ }
+ 
+-static turtleMove _rotateTurtleLeftHand(bool bumped) {
+-  turtleMove turtle_move = turtleMove::NO_MOVE;
++static turtleMove _handleMoveState() {
++  _fs_current_state = State::kAfterMove;
++  _moveActualTurtle();
++  return turtleMove::MOVE;
++}
++
++static void _moveActualTurtle() {
+   switch (_fs_relative_orientation) {
+     case Orientation::kWest:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kSouth, Orientation::kNorth, bumped);
++      _fs_relative_coords.x -= 1;
+       break;
+     case Orientation::kNorth:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kWest, Orientation::kEast, bumped);
++      _fs_relative_coords.y -= 1;
+       break;
+     case Orientation::kEast:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kNorth, Orientation::kSouth, bumped);
++      _fs_relative_coords.x += 1;
+       break;
+     case Orientation::kSouth:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kEast, Orientation::kWest, bumped);
++      _fs_relative_coords.y += 1;
+       break;
+     default:
+-      ROS_ERROR("%s", "Should never reach this default case");
++      ROS_ERROR("Not proper orientation");
+       break;
+   }
+-
+-  return turtle_move;
++  int num_visits = _getTurtleMapNumVisits(_fs_relative_coords);
++  _setTurtleMapValue(_fs_relative_coords, num_visits + 1);
+ }
+ 
+-static turtleMove _rotateTurtleRightHand(bool bumped) {
+-  turtleMove turtle_move = turtleMove::NO_MOVE;
++static void _rotateLeft() {
+   switch (_fs_relative_orientation) {
+     case Orientation::kWest:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kNorth, Orientation::kSouth, bumped);
++      _fs_relative_orientation = Orientation::kSouth;
+       break;
+     case Orientation::kNorth:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kEast, Orientation::kWest, bumped);
++      _fs_relative_orientation = Orientation::kWest;
+       break;
+     case Orientation::kEast:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kSouth, Orientation::kNorth, bumped);
++      _fs_relative_orientation = Orientation::kNorth;
+       break;
+     case Orientation::kSouth:
+-      turtle_move = _setOrientationAndCurrentState(
+-              Orientation::kWest, Orientation::kEast, bumped);
++      _fs_relative_orientation = Orientation::kEast;
+       break;
+     default:
+-      ROS_ERROR("%s", "Should never reach this default case");
++      ROS_ERROR("Not proper orientation");
+       break;
+   }
+-
+-  return turtle_move;
+-}
+-
+-static bool _checkBounds(uint32_t row, uint32_t col) {
+-  bool is_within_bounds = true;
+-  if (row < 0 || row >= _FS_SQUARE_SIZE) {
+-    is_within_bounds = false;
+-  } else if (col < 0 || col >= _FS_SQUARE_SIZE) {
+-    is_within_bounds = false;
+-  }
+-
+-  return is_within_bounds;
+-}
+-
+-/**
+- * Calculate and return if timeout is 0 for the next movement.
+- */
+-static bool _decrementAndCheckCurTime(bool atend) {
+-  if (atend) {
+-    return false;
+-  }
+-
+-  if (_fs_current_timeout == 0) {
+-    _fs_current_timeout = TIMEOUT_MAX;
+-  } else {
+-    _fs_current_timeout -= 1;
+-  }
+-
+-  return TIMEOUT_MAX == _fs_current_timeout;
+ }
+ 
+-static turtleMove _setOrientationAndCurrentState(
+-    Orientation orientation_after_move,
+-    Orientation orientation_maze_contains_wall,
+-    bool maze_contains_wall) {
+-  TurtleHandRulePair turtle_rule_pair = _getTurtleMoveBaseOnHandRule();
+-  turtleMove turtle_move = turtleMove::NO_MOVE;
+-
+-  if (_fs_current_state == State::kMove) {
+-    _fs_relative_orientation = orientation_after_move;
+-    _fs_current_state = State::kIdle;
+-    turtle_move = turtle_rule_pair.rule_no_wall;
+-  } else if (maze_contains_wall) {
+-    _fs_relative_orientation = orientation_maze_contains_wall;
+-    _fs_current_state = State::kHasWall;
+-    turtle_move = turtle_rule_pair.rule_at_wall;
+-  } else {
+-    _fs_current_state = State::kMove;
+-    turtle_move = turtleMove::MOVE;
+-  }
+-
+-  return turtle_move;
+-}
+-
+-static TurtleHandRulePair _getTurtleMoveBaseOnHandRule() {
+-  TurtleHandRulePair turtle_rule_pair;
+-  switch (_fs_turtle_rule) {
+-    case TurtleHandRule::kRightHand:
+-      turtle_rule_pair.rule_no_wall = turtleMove::TURN_RIGHT;
+-      turtle_rule_pair.rule_at_wall = turtleMove::TURN_LEFT;
++static void _rotateRight() {
++  switch (_fs_relative_orientation) {
++    case Orientation::kWest:
++      _fs_relative_orientation = Orientation::kNorth;
+       break;
+-    case TurtleHandRule::kLeftHand:
+-      turtle_rule_pair.rule_no_wall = turtleMove::TURN_LEFT;
+-      turtle_rule_pair.rule_at_wall = turtleMove::TURN_RIGHT;
++    case Orientation::kNorth:
++      _fs_relative_orientation = Orientation::kEast;
++      break;
++    case Orientation::kEast:
++      _fs_relative_orientation = Orientation::kSouth;
++      break;
++    case Orientation::kSouth:
++      _fs_relative_orientation = Orientation::kWest;
+       break;
+     default:
+-      ROS_ERROR("Improper TurtleHandRule");
++      ROS_ERROR("Not proper orientation");
+       break;
+   }
+-
+-  return turtle_rule_pair;
+-}
+-
+-static int16_t _getTurtleMapNumVisits(Coordinates coordinates) {
+-  uint8_t x = coordinates.x;
+-  uint8_t y = coordinates.y;
+-  if (!_checkBounds(x, y)) {
+-    return -1;
+-  }
+-  const uint16_t index = y * _FS_SQUARE_SIZE + x;
+-  return _fsTurtleMap[index];
+-}
+-
+-static void _setTurtleMapValue(Coordinates coordinates, uint16_t value) {
+-  int x = coordinates.x;
+-  int y = coordinates.y;
+-  if (!_checkBounds(x, y)) {
+-    return;
+-  }
+-  const uint16_t index = y * _FS_SQUARE_SIZE + x;
+-  _fsTurtleMap[index] = value;
+ }
+diff --git a/student/properties.cpp b/student/properties.cpp
+index d86fc31..a4a246d 100644
+--- a/student/properties.cpp
++++ b/student/properties.cpp
+@@ -2,6 +2,8 @@
+ 
+ static const char *_FS_ORIENTATION_STR[] = {"WEST", "NORTH", "EAST", "SOUTH"};
+ 
++
+ const char *PROPERTIES_getOrientationString(Orientation orientation) {
+-  return _FS_ORIENTATION_STR[orientation];
++  uint8_t index = static_cast<uint8_t>(orientation);
++  return _FS_ORIENTATION_STR[index];
+ }
+diff --git a/student/student.cpp b/student/student.cpp
+new file mode 100644
+index 0000000..f871197
+--- /dev/null
++++ b/student/student.cpp
+@@ -0,0 +1,10 @@
++#include "student.h"
++
++#include <stdint.h>
++
++static const char *_FS_TURTLE_MOVE_STR[] = {"NO MOVE", "MOVE", "TURN LEFT", "TURN RIGHT"};
++
++const char *STUDENT_getTurtleMoveDecisionString(turtleMove turtle_move_decision) {
++  uint8_t index = static_cast<uint8_t>(turtle_move_decision);
++  return _FS_TURTLE_MOVE_STR[index];
++}
+diff --git a/student/student.h b/student/student.h
+index 87a5c8f..5ab11a7 100755
+--- a/student/student.h
++++ b/student/student.h
+@@ -1,3 +1,6 @@
++#ifndef ECE642RTLE_STUDENT_STUDENT_H_
++#define ECE642RTLE_STUDENT_STUDENT_H_
++
+ #include <ros/ros.h>
+ #include <boost/bind.hpp>
+ #include <ece642rtle/timeInt8.h>
+@@ -23,5 +26,6 @@ turtleMove studentTurtleStep(bool bumped, bool atend);
+ 
+ // OK to change below this line
+ bool studentMoveTurtle(QPointF& pos_, int& nw_or);
++const char *STUDENT_getTurtleMoveDecisionString(turtleMove turtle_move_decision);
+ 
+-
++#endif // ECE642RTLE_STUDENT_STUDENT_H_
