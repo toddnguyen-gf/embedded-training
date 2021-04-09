@@ -15,8 +15,6 @@ I will employ **Dijkstra's algorithm** to try to get the shortest path to all sq
 - R-5. The turtle shall move in its current orientation if there is no wall.
 - R-6. If there is a wall, the turtle shall rotate right and check if there is a wall. The turtle shall continue rotating until it has a direction with no wall.
   - R-6a. If the current orientation contains a visited square, the turtle shall continue to rotate until the only choice left is a visited square.
-- R-7. If the turtle is surrounded by walls, or if its only move is to visit a visited square, then the turtle shall backtrack.
-  - R-7a. At each backtrack step, the turtle shall check if there are other moves other than visited squares.
-- R-8. If there are only visited squares, the turtle shall prioritize the square with LESS number of visits.
-  - R-8a. The turtle shall rotate until it finds a square with the less number of visits.
-  - R-8b. If the number of visits are the same, the turtle shall choose the first square that it rotates to and continue in that route.
+- R-7. If there are only visited squares / walls, the turtle shall prioritize the square with LESS number of visits.
+  - R-7a. The turtle shall rotate until it finds a square with the less number of visits.
+  - R-7b. If the number of visits are the same, the turtle shall choose the first square that it rotates to and continue in that route.
