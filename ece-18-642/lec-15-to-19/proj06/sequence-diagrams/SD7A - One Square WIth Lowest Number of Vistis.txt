@@ -1,0 +1,8 @@
+title SD7A - One Square WIth Lowest Number of Vistis
+
+participant Maze
+participant Turtle
+participant SurroundingSquares
+
+Turtle->Turtle: 1. Rotate to orientation with lowest number of visits.
+Turtle->Maze: 2. Go that orientation.

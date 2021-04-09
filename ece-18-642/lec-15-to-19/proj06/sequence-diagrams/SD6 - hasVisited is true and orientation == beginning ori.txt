@@ -12,10 +12,5 @@ note over Turtle:Do the 2 steps below for all four directions.
 Turtle->Turtle: 1. Rotate right
 Turtle->SurroundingSquares: 2. Keep track of # of visits.
 note over Turtle: We have # of visits for all 4 directions.
-note over Turtle: If we have one lowest number of visits...
-Turtle->Turtle: 3. Rotate to orientation with lowest number of visits.
-Turtle->Maze: 4. Go that orientation.
-note over Turtle: If we have multiple squares with the lowest number of visits
-Turtle->Turtle: 5. Rotate to orientation with lowest number of visits.
-Turtle->Turtle: 6. Stop at whichever orientation comes up first.
-Turtle->Maze: 7. Go that orientation.
+note over Turtle: If we have one lowest number of visits, see SD-7A.
+note over Turtle: If we have multiple squares with the lowest number of visits, see SD-7B.
